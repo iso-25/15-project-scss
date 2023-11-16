@@ -1,0 +1,52 @@
+$ff: "Lexend Deca", sans-serif;
+
+// const colors
+$white: #fff;
+$black: #000;
+
+$body-bg: #020617;
+$body-color: $white;
+
+$section-bg: #111827;
+
+$primary-color: #eab308;
+
+$header-link: #9ca3af;
+$header-link-active: $white;
+
+$btn-text-color: $black;
+$btn-radius: 4px;
+
+$transition: 0.2s all ease-out;
+$transform-nav: scale(1.2);
+$transform-img: scale(1.08);
+
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+$desc-colot-txt: #6b7280;
+$title-color-txt: #f3f4f6;
+
+%title {
+  color: $title-color-txt;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+%desc {
+  color: $desc-colot-txt;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+%item-title {
+  color: $title-color-txt;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 41px;
+}

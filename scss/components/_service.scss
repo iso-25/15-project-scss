@@ -1,0 +1,86 @@
+.service {
+  padding: 96px 0;
+  background: $section-bg;
+  @include mobile {
+    padding: 60px 0;
+  }
+  .container {
+    align-items: center;
+    justify-content: space-between;
+    gap: 89px;
+
+    @include tablet {
+      gap: 20px;
+    }
+  }
+  &__header {
+    justify-content: start;
+    margin-bottom: 56px;
+    @include mobile {
+        margin-bottom: 36px;
+    }
+  }
+  &__info {
+    max-width: 461px;
+  }
+  &__title {
+    @extend %title;
+    span {
+      color: $primary-color;
+    }
+    margin-bottom: 24px;
+    @include mobile {
+        margin-bottom: 18px;
+    }
+  }
+  &__desc {
+    @extend %desc;
+  }
+  &__link{
+    transition: $transition;
+    &:hover{
+    transform: $transform-img;
+    }
+}
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    @include tablet {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .service-item {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      background-color: $body-bg;
+      border-radius: 12px;
+      padding: 32px;
+      @include mobile {
+        padding: 16px;
+      }
+      &__img {
+        max-width: 40px;
+        height: auto;
+        margin-inline: auto;
+        margin-bottom: 32px;
+      }
+      &__title {
+        @extend %item-title;
+        max-width: 220px;
+        margin-inline: auto;
+        margin-bottom: 16px;
+      }
+      &__desc {
+        flex-grow: 1;
+        @extend %desc;
+        text-align: center;
+      }
+    }
+  }
+}

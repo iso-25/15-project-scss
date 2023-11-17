@@ -407,6 +407,7 @@ img:hover {
   }
 }
 .portfolio__title {
+  text-align: center;
   margin-bottom: 24px;
 }
 .portfolio__title span {
@@ -416,6 +417,9 @@ img:hover {
   .portfolio__title {
     margin-bottom: 18px;
   }
+}
+.portfolio__desc {
+  text-align: center;
 }
 .portfolio .portfolio-images {
   width: 100%;

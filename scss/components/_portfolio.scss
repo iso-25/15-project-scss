@@ -21,6 +21,7 @@
   }
   &__title {
     @extend %title;
+    text-align: center;
     span {
       color: $primary-color;
     }
@@ -31,6 +32,7 @@
   }
   &__desc {
     @extend %desc;
+    text-align: center;
   }
   .portfolio-images {
     & img {

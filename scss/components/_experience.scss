@@ -1,13 +1,11 @@
 .experience {
-  // padding: 96px 0;
 
-  .experience__wrapper {
+  &__wrapper {
     max-width: calc(1424px + 40px);
     margin-inline: auto;
     padding: 0 8px;
   }
   .container {
-    // max-width: calc(1424px + 40px);
     max-width: 1424px;
     padding: 85px 149px;
     margin-inline: auto;
@@ -84,7 +82,6 @@
       display: flex;
       flex-direction: column;
       background-color: $body-bg;
-      // border: 9px solid $body-bg; //
       border-radius: 12px;
       padding: 32px;
       @include mobile {

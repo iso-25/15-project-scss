@@ -488,7 +488,7 @@ img:hover {
 .experience .experience-list {
   display: grid;
   width: 100%;
-  grid-template-columns: 32.5044404973% 29.8401420959% 32.5044404973%;
+  grid-template-columns: 33.0373001776% 28.2415630551% 33.0373001776%;
   gap: 29px;
 }
 @media (max-width: 992px) {
@@ -523,7 +523,6 @@ img:hover {
   display: flex;
   flex-direction: column;
   background-color: #020617;
-  border: 9px solid #020617;
   border-radius: 12px;
   padding: 32px;
 }

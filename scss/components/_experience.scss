@@ -56,8 +56,7 @@
   .experience-list {
     display: grid;
     width: 100%;
-    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-columns: calc(366 / 1126 * 100%) calc(336 / 1126 * 100%) calc(366 / 1126 * 100%);
+    grid-template-columns: calc(372 / 1126 * 100%) calc(318 / 1126 * 100%) calc(372 / 1126 * 100%);
     gap: 29px;
     @include tablet {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -85,7 +84,7 @@
       display: flex;
       flex-direction: column;
       background-color: $body-bg;
-      border: 9px solid $body-bg; //
+      // border: 9px solid $body-bg; //
       border-radius: 12px;
       padding: 32px;
       @include mobile {

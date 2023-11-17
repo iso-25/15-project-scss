@@ -1,0 +1,40 @@
+.contact {
+  padding: 96px 0;
+  @include mobile {
+    padding: 60px 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include tablet {
+      gap: 20px;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 685px;
+    margin-bottom: 56px;
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+  &__title {
+    @extend %title;
+    max-width: 242px;
+    span {
+      color: $primary-color;
+    }
+    margin-bottom: 24px;
+    @include mobile {
+      margin-bottom: 18px;
+    }
+  }
+  &__desc {
+    @extend %desc;
+    text-align: center;
+  }
+}

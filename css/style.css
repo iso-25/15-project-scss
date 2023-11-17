@@ -51,19 +51,19 @@ img:hover {
   background: #f8c72d;
 }
 
-.experience__title, .portfolio__title, .service__title, .about__title, .welcome__name {
+.contact__title, .experience__title, .portfolio__title, .service__title, .about__title, .welcome__name {
   color: #f3f4f6;
   font-size: 42px;
   font-weight: 700;
   line-height: 64px;
 }
 @media (max-width: 576px) {
-  .experience__title, .portfolio__title, .service__title, .about__title, .welcome__name {
+  .contact__title, .experience__title, .portfolio__title, .service__title, .about__title, .welcome__name {
     font-size: 36px;
   }
 }
 
-.experience .experience-list .experience-item__desc, .experience .experience-list .experience-item__app, .experience .experience-list .experience-item_date, .experience__desc, .portfolio__desc, .service .service-list .service-item__desc, .service__desc, .about__desc, .welcome__role {
+.contact__desc, .experience .experience-list .experience-item__desc, .experience .experience-list .experience-item__app, .experience .experience-list .experience-item_date, .experience__desc, .portfolio__desc, .service .service-list .service-item__desc, .service__desc, .about__desc, .welcome__role {
   color: #6b7280;
   font-size: 16px;
   font-weight: 400;
@@ -548,4 +548,51 @@ img:hover {
 }
 .experience .experience-list .experience-item__desc {
   flex-grow: 1;
+}
+
+.contact {
+  padding: 96px 0;
+}
+@media (max-width: 576px) {
+  .contact {
+    padding: 60px 0;
+  }
+}
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  .contact .container {
+    gap: 20px;
+  }
+}
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 685px;
+  margin-bottom: 56px;
+}
+@media (max-width: 576px) {
+  .contact__info {
+    margin-bottom: 40px;
+  }
+}
+.contact__title {
+  max-width: 242px;
+  margin-bottom: 24px;
+}
+.contact__title span {
+  color: #eab308;
+}
+@media (max-width: 576px) {
+  .contact__title {
+    margin-bottom: 18px;
+  }
+}
+.contact__desc {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

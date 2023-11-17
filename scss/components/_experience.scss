@@ -1,5 +1,4 @@
 .experience {
-
   &__wrapper {
     max-width: calc(1424px + 40px);
     margin-inline: auto;
@@ -54,7 +53,9 @@
   .experience-list {
     display: grid;
     width: 100%;
-    grid-template-columns: calc(372 / 1126 * 100%) calc(318 / 1126 * 100%) calc(372 / 1126 * 100%);
+    grid-template-columns: calc(372 / 1126 * 100%) calc(318 / 1126 * 100%) calc(
+        372 / 1126 * 100%
+      );
     gap: 29px;
     @include tablet {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -70,7 +71,7 @@
       @include mobile {
         max-width: 100%;
       }
-      }
+    }
 
     .box-2 {
       max-width: 336px;
@@ -78,15 +79,9 @@
         max-width: 100%;
       }
     }
-   .experience-item {
-      display: flex;
-      flex-direction: column;
-      background-color: $body-bg;
-      border-radius: 12px;
-      padding: 32px;
-      @include mobile {
-        padding: 16px;
-      }
+
+    .experience-item {
+      @extend %grid-item;
 
       &_date {
         @extend %desc;

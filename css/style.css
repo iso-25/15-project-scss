@@ -78,6 +78,20 @@ img:hover {
   line-height: 41px;
 }
 
+.experience .experience-list .experience-item, .service .service-list .service-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #020617;
+  border-radius: 12px;
+  padding: 32px;
+}
+@media (max-width: 576px) {
+  .experience .experience-list .experience-item, .service .service-list .service-item {
+    padding: 16px;
+  }
+}
+
 .header {
   padding: 16px 0;
 }
@@ -334,19 +348,6 @@ img:hover {
     gap: 20px;
   }
 }
-.service .service-list .service-item {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #020617;
-  border-radius: 12px;
-  padding: 32px;
-}
-@media (max-width: 576px) {
-  .service .service-list .service-item {
-    padding: 16px;
-  }
-}
 .service .service-list .service-item__img {
   max-width: 40px;
   height: auto;
@@ -517,18 +518,6 @@ img:hover {
 @media (max-width: 576px) {
   .experience .experience-list .box-2 {
     max-width: 100%;
-  }
-}
-.experience .experience-list .experience-item {
-  display: flex;
-  flex-direction: column;
-  background-color: #020617;
-  border-radius: 12px;
-  padding: 32px;
-}
-@media (max-width: 576px) {
-  .experience .experience-list .experience-item {
-    padding: 16px;
   }
 }
 .experience .experience-list .experience-item_date {

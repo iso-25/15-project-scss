@@ -6,7 +6,6 @@
   @include mobile {
     font-size: 36px;
   }
-
 }
 
 %desc {
@@ -22,4 +21,16 @@
   font-size: 26px;
   font-weight: 700;
   line-height: 41px;
+}
+
+%grid-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $body-bg;
+  border-radius: 12px;
+  padding: 32px;
+  @include mobile {
+    padding: 16px;
+  }
 }

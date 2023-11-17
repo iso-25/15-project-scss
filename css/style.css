@@ -14,28 +14,6 @@ img {
   max-width: 100%;
 }
 
-.experience__title, .portfolio__title, .service__title, .about__title, .welcome__name {
-  color: #f3f4f6;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 64px;
-}
-
-.experience__desc, .portfolio__desc, .service .service-list .service-item__desc, .service__desc, .about__desc, .welcome__role {
-  color: #6b7280;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27px;
-}
-
-.service .service-list .service-item__title {
-  color: #f3f4f6;
-  text-align: center;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 41px;
-}
-
 body {
   font-family: "Lexend Deca", sans-serif;
   background: #020617;
@@ -73,6 +51,33 @@ img:hover {
   background: #f8c72d;
 }
 
+.experience__title, .portfolio__title, .service__title, .about__title, .welcome__name {
+  color: #f3f4f6;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 64px;
+}
+@media (max-width: 576px) {
+  .experience__title, .portfolio__title, .service__title, .about__title, .welcome__name {
+    font-size: 36px;
+  }
+}
+
+.experience .experience-list .experience-item__desc, .experience .experience-list .experience-item__app, .experience .experience-list .experience-item_date, .experience__desc, .portfolio__desc, .service .service-list .service-item__desc, .service__desc, .about__desc, .welcome__role {
+  color: #6b7280;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.experience .experience-list .experience-item__title, .service .service-list .service-item__title {
+  color: #f3f4f6;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
 .header {
   padding: 16px 0;
 }
@@ -94,11 +99,6 @@ img:hover {
 }
 .header__logo:hover {
   transform: scale(1.2);
-}
-@media (max-width: 992px) {
-  .header__logo {
-    color: #000;
-  }
 }
 .header__menu {
   display: none;
@@ -425,7 +425,7 @@ img:hover {
     gap: 15px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 320px) {
   .portfolio .portfolio-images {
     grid-template-columns: 1fr;
   }
@@ -446,15 +446,15 @@ img:hover {
   padding: 0 8px;
 }
 .experience .container {
-  max-width: 1464px;
-  padding: 96px 165px;
+  max-width: 1424px;
+  padding: 85px 149px;
   margin-inline: auto;
   background: #111827;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 89px;
+  justify-content: center;
+  gap: 80px;
 }
 @media (max-width: 992px) {
   .experience .container {
@@ -464,15 +464,9 @@ img:hover {
 }
 .experience__header {
   width: 100%;
-  margin-bottom: 56px;
-}
-@media (max-width: 576px) {
-  .experience__header {
-    margin-bottom: 36px;
-  }
 }
 .experience__info {
-  max-width: 461px;
+  max-width: 730px;
 }
 .experience__title {
   margin-bottom: 24px;
@@ -484,4 +478,74 @@ img:hover {
   .experience__title {
     margin-bottom: 18px;
   }
+}
+.experience__link {
+  transition: 0.2s all ease-out;
+}
+.experience__link:hover {
+  transform: scale(1.08);
+}
+.experience .experience-list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 32.5044404973% 29.8401420959% 32.5044404973%;
+  gap: 29px;
+}
+@media (max-width: 992px) {
+  .experience .experience-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .experience .experience-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.experience .experience-list .box-1 {
+  max-width: 366px;
+}
+@media (max-width: 576px) {
+  .experience .experience-list .box-1 {
+    max-width: 100%;
+  }
+}
+.experience .experience-list .box-2 {
+  max-width: 336px;
+}
+@media (max-width: 576px) {
+  .experience .experience-list .box-2 {
+    max-width: 100%;
+  }
+}
+.experience .experience-list .experience-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #020617;
+  border: 9px solid #020617;
+  border-radius: 12px;
+  padding: 32px;
+}
+@media (max-width: 576px) {
+  .experience .experience-list .experience-item {
+    padding: 16px;
+  }
+}
+.experience .experience-list .experience-item_date {
+  color: #D1D5DB;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.experience .experience-list .experience-item__title {
+  color: #eab308;
+  text-align: start;
+  margin-bottom: 4px;
+}
+.experience .experience-list .experience-item__app {
+  color: #D1D5DB;
+  margin-bottom: 16px;
+}
+.experience .experience-list .experience-item__desc {
+  flex-grow: 1;
 }/*# sourceMappingURL=style.css.map */

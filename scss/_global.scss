@@ -1,0 +1,25 @@
+%title {
+  color: $title-color-txt;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 64px;
+  @include mobile {
+    font-size: 36px;
+  }
+
+}
+
+%desc {
+  color: $desc-colot-txt;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+%item-title {
+  color: $title-color-txt;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 41px;
+}

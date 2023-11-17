@@ -1,28 +1,28 @@
 // Reset and vendors
-@import './vendors/reset';
+@import 'vendors/reset';
 
 // Utils
-@import './utils/vars';
-@import './utils/fonts';
-@import './utils/mixins';
+@import 'utils/vars';
+@import 'utils/fonts';
+@import 'utils/mixins';
 
 // Layout
-@import './layout/base';
+@import 'layout/base';
 
 // UI
-@import './ui/btn';
+@import 'ui/btn';
 // @import './ui/desc';
 
 // Global
-@import './global';
+@import 'global';
 
 
 // Components
-@import './components/header';
-@import './components/welcome';
-@import './components/about';
-@import './components/service';
-@import './components/portfolio';
-@import './components/experience';
+@import 'components/header';
+@import 'components/welcome';
+@import 'components/about';
+@import 'components/service';
+@import 'components/portfolio';
+@import 'components/experience';
 
 // Pages

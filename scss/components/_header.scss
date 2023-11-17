@@ -21,9 +21,6 @@
       transform: $transform-nav;
     }
 
-    @include tablet {
-      color: $black;
-    }
   }
 
   &__menu {

@@ -21,9 +21,23 @@
   @media (max-width: $mobile) {
     @content;
   }
+
 }
-@mixin min-mobile {
-  @media (min-width: $mobile) {
+
+@mixin mobile-small {
+  @media (max-width: $mobile-very-small) {
     @content;
   }
 }
+
+@mixin mobile-very-small {
+  @media (min-width: $mobile-very-small) {
+    @content;
+  }
+}
+
+// @mixin min-mobile {
+//   @media (min-width: $mobile) {
+//     @content;
+//   }
+// }

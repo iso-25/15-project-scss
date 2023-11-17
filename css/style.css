@@ -14,14 +14,14 @@ img {
   max-width: 100%;
 }
 
-.welcome__name, .about__title, .service__title, .portfolio__title, .experience__title {
+.experience__title, .portfolio__title, .service__title, .about__title, .welcome__name {
   color: #f3f4f6;
   font-size: 42px;
   font-weight: 700;
   line-height: 64px;
 }
 
-.welcome__role, .about__desc, .service__desc, .service .service-list .service-item__desc, .portfolio__desc, .experience__desc {
+.experience__desc, .portfolio__desc, .service .service-list .service-item__desc, .service__desc, .about__desc, .welcome__role {
   color: #6b7280;
   font-size: 16px;
   font-weight: 400;
@@ -43,7 +43,7 @@ body {
 }
 
 .container {
-  max-width: calc(1108px + 40px);
+  max-width: 1148px;
   padding: 0 20px;
   margin-inline: auto;
 }
@@ -441,12 +441,12 @@ img:hover {
 }
 
 .experience .experience__wrapper {
-  max-width: calc(1424px + 40px);
+  max-width: 1464px;
   margin-inline: auto;
   padding: 0 8px;
 }
 .experience .container {
-  max-width: calc(1424px + 40px);
+  max-width: 1464px;
   padding: 96px 165px;
   margin-inline: auto;
   background: #111827;
@@ -484,6 +484,4 @@ img:hover {
   .experience__title {
     margin-bottom: 18px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -24,7 +24,6 @@
     span {
       color: $primary-color;
     }
-    // margin-bottom: 24rem;
   }
 
   &__desc {
@@ -54,21 +53,9 @@
     line-height: 41rem;
   }
 
-  &_adress {
-  }
-
   &__info-span {
     color: $primary-color;
     font-weight: 700;
-  }
-
-  &__phone {
-  }
-
-  &__email {
-  }
-
-  &__site {
   }
 
   &__msg {
@@ -116,7 +103,6 @@
     border: none;
     text-align: start;
 
-    // align-items: start;
     resize: none;
     &::placeholder{
       @extend %style-text-msg;

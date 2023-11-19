@@ -1,23 +1,23 @@
 .experience {
   &__wrapper {
-    max-width: calc(1424px + 40px);
+    max-width: calc(1424rem + 40rem);
     margin-inline: auto;
     padding: 0 8px;
   }
+
   .container {
-    max-width: 1424px;
-    padding: 85px 149px;
+    max-width: 1424rem;
+    padding: 85rem 149rem;
     margin-inline: auto;
     background: $section-bg;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 80rem;
 
     @include tablet {
-      padding: 60px 20px;
-      gap: 20px;
+      padding: 85rem 20rem;
     }
   }
 
@@ -26,7 +26,7 @@
   }
 
   &__info {
-    max-width: 730px;
+    max-width: 730rem;
   }
 
   &__title {
@@ -34,10 +34,7 @@
     span {
       color: $primary-color;
     }
-    margin-bottom: 24px;
-    @include mobile {
-      margin-bottom: 18px;
-    }
+    margin-bottom: 24rem;
   }
 
   &__desc {
@@ -50,31 +47,27 @@
       transform: $transform-img;
     }
   }
+
   .experience-list {
     display: grid;
     width: 100%;
     grid-template-columns: calc(372 / 1126 * 100%) calc(318 / 1126 * 100%) calc(
         372 / 1126 * 100%
       );
-    gap: 29px;
-    @include tablet {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-    }
+    gap: 29rem;
     @include mobile {
       grid-template-columns: 1fr;
-      gap: 20px;
     }
 
     .box-1 {
-      max-width: 366px;
+      max-width: 366rem;
       @include mobile {
         max-width: 100%;
       }
     }
 
     .box-2 {
-      max-width: 336px;
+      max-width: 336rem;
       @include mobile {
         max-width: 100%;
       }
@@ -86,21 +79,21 @@
       &_date {
         @extend %desc;
         color: $abovetitle-item-color-txt;
-        font-size: 20px;
-        margin-bottom: 8px;
+        font-size: 20rem;
+        margin-bottom: 8rem;
       }
 
       &__title {
         @extend %item-title;
         color: $primary-color;
         text-align: start;
-        margin-bottom: 4px;
+        margin-bottom: 4rem;
       }
 
       &__app {
         @extend %desc;
         color: $undertitle-item-color-txt;
-        margin-bottom: 16px;
+        margin-bottom: 16rem;
       }
 
       &__desc {

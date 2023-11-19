@@ -21,7 +21,6 @@
   @media (max-width: $mobile) {
     @content;
   }
-
 }
 
 @mixin mobile-small {

@@ -1,25 +1,21 @@
 .about {
-  padding: 96px 0;
-  @include mobile {
-    padding: 60px 0;
-  }
+  padding: 96rem 0;
+
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 89px;
-    @include tablet {
-      gap: 20px;
-    }
+    gap: 89rem;
     @include mobile {
       flex-direction: column;
       justify-content: center;
+      align-items: start;
     }
   }
   &__img-wrapper {
-    max-width: 510px;
-    padding-top: 10px;
-    padding-right: 35px;
+    max-width: 510rem;
+    padding-top: 10rem;
+    padding-right: 35rem;
     flex-shrink: 0;
     @include tablet {
       max-width: 50%;
@@ -32,17 +28,17 @@
   }
   &__img {
     width: 100%;
-    border-radius: 24px;
-    border: 16px solid $primary-color;
+    border-radius: 24rem;
+    border: 16rem solid $primary-color;
     & img {
       position: relative;
-      top: -26px;
+      top: -26rem;
       left: 51 / 475 * 100%;
     }
   }
 
   &__info {
-    max-width: 509px;
+    max-width: 509rem;
     width: 510 / 1108 * 100%;
     @include mobile {
       width: 100%;
@@ -53,17 +49,17 @@
     span {
       color: $primary-color;
     }
-    margin-bottom: 32px;
+    margin-bottom: 32rem;
   }
   &__desc {
     @extend %desc;
   }
   .desc-1 {
-    margin-bottom: 18px;
+    margin-bottom: 18rem;
     max-width: 461 / 509 * 100%;
   }
   .desc-2 {
-    margin-bottom: 40px;
+    margin-bottom: 40rem;
     width: 100%;
   }
 }

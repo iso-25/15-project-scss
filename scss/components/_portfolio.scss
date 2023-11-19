@@ -1,48 +1,43 @@
 .portfolio {
-  padding: 96px 0;
-  @include mobile {
-    padding: 60px 0;
-  }
+  padding: 96rem 0;
+
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @include tablet {
-      gap: 20px;
-    }
   }
+
   &__info {
-    max-width: 461px;
-    margin-bottom: 80px;
-    @include mobile {
-      margin-bottom: 40px;
-    }
+    max-width: 461rem;
+    margin-bottom: 80rem;
   }
+
   &__title {
     @extend %title;
     text-align: center;
     span {
       color: $primary-color;
     }
-    margin-bottom: 24px;
-    @include mobile {
-      margin-bottom: 18px;
-    }
+    margin-bottom: 24rem;
   }
+
   &__desc {
     @extend %desc;
     text-align: center;
   }
+
   .portfolio-images {
     & img {
       width: 100%;
-      border-radius: 12px;
+      border-radius: 12rem;
     }
+
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 27px;
+    gap: 27rem;
+
     .portfolio-box1 {
       display: flex;
       grid-column-start: 1;
@@ -50,18 +45,22 @@
       grid-row-start: 1;
       grid-row-end: 3;
     }
+
     @include tablet-small {
       grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
+      gap: 15rem;
     }
+
     @include mobile-small {
       grid-template-columns: 1fr;
+
       .portfolio-box1 {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
       }
+
       .portfolio-box2 {
         width: 100%;
       }
